@@ -1,0 +1,18 @@
+** start of script.js **
+
+function confirmEnding(str, target) {
+  // Get the ending of str that matches the length of target
+  let ending = str.slice(-target.length); 
+  // Compare with target
+  return ending === target;
+}
+
+// Examples:
+console.log(confirmEnding("Bastian", "n"));       // true
+console.log(confirmEnding("Congratulation", "on")); // true
+console.log(confirmEnding("OpenAI", "AI"));       // true
+console.log(confirmEnding("OpenAI", "open"));     // false
+
+
+** end of script.js **
+
